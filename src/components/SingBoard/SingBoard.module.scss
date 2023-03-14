@@ -1,0 +1,24 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.sing-board {
+  @include border;
+
+  width: 24rem;
+  display: grid;
+  gap: .8rem;
+  background: $white;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sing {
+  padding: 1.6rem .4rem;
+  text-align: center;
+  background: $white;
+  border: .1rem solid $grey;
+  border-radius: .6rem;
+  color: $black;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 500;
+}
